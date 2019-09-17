@@ -1,17 +1,19 @@
 <div class="form-group">
   <label for="car-name">Car Name</label>
-  <input type="email"
+  <input type="text"
          class="form-control"
-         id="car-name">
+         id="car-name"
+         [(ngModel)]="carName">
 </div>
 
 
 <div class="form-group">
   <label for="car-model">Car Model</label>
-  <input type="email"
+  <input type="text"
          class="form-control"
-         id="car-model">
+         id="car-model"
+         [(ngModel)]="carModel">
 </div>
 
-<button class="btn btn-outline-dark">Add car</button>
-<button class="btn btn-outline-warning">Load Cars</button>
+<button class="btn btn-outline-dark" (click)="onAdd()">Add car</button>
+<button class="btn btn-outline-warning" (click)="onLoad()">Load Cars</button>
